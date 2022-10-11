@@ -6,7 +6,7 @@ start = [lst,[],[]]
 goal = [[],[],lst]
 
 def getAvailableMoves(lst):
-    possibilities = [] # will be a 2d array holding 2 3d arrays
+    possibilities = [] # will be a 2d array holding 2 arrays
     if len(lst[0]) >= 1:
         if len(lst[1]) == 0 or lst[0][0] < lst[1][0]:
             psb = [lst[0][1:], [lst[0][0]] + lst[1], lst[2]]
